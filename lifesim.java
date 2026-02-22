@@ -284,7 +284,7 @@ class Player {
 	    	player.watchTV();
 	    }
 	    else {
-	    	System.out.println(player.getName()+" lost $"+bet+" :C.");
+	    	System.out.printf("%s lost $%.2f :C.%n", player.getName(), bet);
 	    }
 	}
 	public static void limbo(Player player, double bet) {
@@ -429,4 +429,5 @@ class Driver {
 		System.out.println("\nWinner: "+ getWinner());
 	}
 }
+
 
