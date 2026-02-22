@@ -3,7 +3,7 @@ Overview
 
 LifeSim Arcade is a turn-based Java console game where players manage their stats, money, and security while competing through mini-games. Each player makes decisions that affect their hunger, happiness, hygiene, and bank balance.
 
-The goal is to finish with the highest overall score.
+The goal is to finish with the highest overall score. Made with Eclipse IDE
 
 Features
 
