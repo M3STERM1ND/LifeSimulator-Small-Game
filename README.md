@@ -1,11 +1,12 @@
 🎮 LifeSim Arcade (Java Console Game)
-Overview
+
+Overview:
 
 LifeSim Arcade is a turn-based Java console game where players manage their stats, money, and security while competing through mini-games. Each player makes decisions that affect their hunger, happiness, hygiene, and bank balance.
 
 The goal is to finish with the highest overall score. Made with Eclipse IDE
 
-Features
+Features:
 
   Multiple players
   
@@ -13,13 +14,13 @@ Features
   
   Mini-games:
   
-  🎰 Slots
-  
-  🃏 Blackjack
-  
-  🎲 Dice Roll
-  
-  Limbo
+    🎰 Slots
+    
+    🃏 Blackjack
+    
+    🎲 Dice Roll
+    
+    Limbo
 
   Bank system with upgradeable security
   
@@ -29,7 +30,7 @@ Features
   
   Final score calculation based on stats and balance
 
-How It Works
+How It Works:
 
   Each round, players choose an action:
   
@@ -43,7 +44,7 @@ How It Works
   
   After 10 rounds, the player with the highest total score wins.
 
-Technologies Used
+Technologies Used:
 
   Java
   
@@ -73,7 +74,7 @@ Technologies Used
   
   Basic probability mechanics
   
-  How to Run
+How to Run:
   
   Open the project in Eclipse (or any Java IDE).
   
@@ -83,7 +84,7 @@ Technologies Used
   
   Follow the on-screen menu prompts.
 
-What I Learned
+What I Learned:
 
   Designing multiple interacting classes
   
@@ -93,7 +94,7 @@ What I Learned
   
   Structuring a multi-feature program
 
-Things to know
+Things to know:
 
   Make sure to inputs choices 1-10 otherwise your turn will be skipped. 
   
