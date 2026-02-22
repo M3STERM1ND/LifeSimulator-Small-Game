@@ -210,7 +210,7 @@ class Player {
 		System.out.println("\n🎰 SLOTS 🎰");
         System.out.println("[ " + result + " ]");
         if (result.equals("🕶 🕶 🕶")||result.equals("👑 👑 👑")||result.equals("🎓 🎓 🎓")||result.equals("👅 👅 👅")||result.equals("💪 💪 💪")) {
-        	System.out.println(p.getName()+" won $"+(bet*7));
+        	System.out.printf("%s won $%.2f%n", p.getName(), bet * 7);
         	p.watchTV();
         	b.addBalance(bet*7);
         }
@@ -248,10 +248,10 @@ class Player {
 	    System.out.println("\nDealer hand: " + dealerHand);
 	    
 	    if (playerHand > 21) {
-	        System.out.println("Bust! "+ player.getName() +" lost $" + bet);
+	        System.out.printf("Bust! %s lost $%.2f%n", player.getName(), bet);
 	    } 
 	    else if (dealerHand > 21 || playerHand > dealerHand) {
-	        System.out.println(player.getName()+" won $" + (bet * 2) + "!");
+	        System.out.printf("%s won $%.2f!%n", player.getName(), bet * 2);
 	        bank.addBalance(bet * 2);
 	    } 
 	    else if (playerHand == dealerHand) {
@@ -259,7 +259,7 @@ class Player {
 	        bank.addBalance(bet);
 	    } 
 	    else {
-	        System.out.println("Dealer wins! "+player.getName()+ " lost $" + bet);
+	        System.out.printf("Dealer wins! %s lost $%.2f%n", player.getName(), bet);
 	    }
 	}
 	public static void diceRoll(Player player, double bet) {
@@ -274,12 +274,12 @@ class Player {
 	    int dice2=(int)(Math.random() * 6) + 1;
 	    System.out.println("Dice 1: "+dice1+" Dice 2: "+dice2);
 	    if (dice1+dice2==7) {
-	    	System.out.println("Congratulations "+player.getName()+"! You won $"+(bet*3));
+	    	System.out.printf("Congratulations %s! You won $%.2f%n", player.getName(), bet*3);
 	    	bank.addBalance(bet*3);
 	    	player.watchTV();
 	    }
 	    else if (dice1+dice2>7) {
-	    	System.out.println("Congratulations "+player.getName()+"! You won $"+(bet*2));
+	    	System.out.printf("Congratulations %s! You won $%.2f%n", player.getName(), bet*2);
 	    	bank.addBalance(bet*2);
 	    	player.watchTV();
 	    }
@@ -307,7 +307,7 @@ class Player {
 	    double barHeight = 1.0 + (Math.random() * 4.0);
 	    System.out.printf("\nThe bar is set at: %.1f\n", barHeight);
 	    if (playerHeight<barHeight) {
-	    	System.out.println("Congratulations "+player.getName()+"! You won $"+(bet*playerHeight)+"!");
+	    	System.out.printf("Congratulations %s! You won $%.2f!%n", player.getName(), bet*playerHeight);
 	    	player.watchTV();
 	    	bank.addBalance(bet*playerHeight);
 	    }
@@ -429,3 +429,4 @@ class Driver {
 		System.out.println("\nWinner: "+ getWinner());
 	}
 }
+
